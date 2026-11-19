@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Campus Cycle - Saturday Repair Clinic</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Campus Cycle</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#prices">Prices</a>
+      <a href="#book">Book a slot</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Saturday Repair Clinic</h2>
+      <p>Bring your bicycle to our Saturday repair clinic.</p>
+      <p><strong>When:</strong> Saturday, 15:00–17:00</p>
+      <p><strong>Where:</strong> Workshop B, Student Centre</p>
+      <img src="images/bicycle.png"
+           alt="Bicycle ready for repair">
+    </section>
+
+    <section id="prices">
+      <h2>Our prices</h2>
+      <ul>
+        <li>Bicycle check: €10</li>
+        <li>Each small repair: €5</li>
+        <li>Full service: €45</li>
+      </ul>
+
+      <h3>Estimate your price</h3>
+
+      <label for="service">Choose a service</label>
+      <select id="service">
+        <option value="10">Bicycle check (€10)</option>
+        <option value="45">Full service (€45)</option>
+      </select>
+
+      <label for="repairs">Number of small repairs</label>
+      <input id="repairs" type="number" min="0" step="1" value="0">
+
+      <p>Your estimate: <output id="total">€10</output></p>
+    </section>
+
+    <section id="book">
+      <h2>Book a slot</h2>
+
+      <form id="booking">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="slot">Choose a time</label>
+        <select id="slot" name="slot" required>
+          <option value="15:00">15:00</option>
+          <option value="15:30">15:30</option>
+          <option value="16:00">16:00</option>
+          <option value="16:30">16:30</option>
+        </select>
+
+        <button type="submit">Book this slot</button>
+      </form>
+
+      <p id="message" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Campus Cycle · Personal code: BW-L9PZ</p>
+  </footer>
+</body>
+</html>
