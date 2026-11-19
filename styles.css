@@ -85,3 +85,8 @@ button:hover {
 footer {
   text-align: center;
 }
+
+#prices li {
+  color: #0b6e4f;
+  font-weight: 700;
+}
